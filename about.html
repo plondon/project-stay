@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>STAY Project</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery.js" ></script>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:700,400' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+			<div id="hamburger">
+				<img src="icons/menu.svg">
+			</div>
+			<nav id = "hamburger-menu">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="staff.html">STAFF</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="hours.html">HOURS</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				</ul>
+			</nav>
+		<header>
+			<nav id="bar">
+				<ul id="icons">
+					<li class="panel">
+						<img class="front card" src="icons/home66.svg"></img>
+						<div class="back card"><a href="index.html">Home</a></div>
+				   	</li>
+					<li class="panel">
+						<img class="front card" src="icons/users6.svg">
+						<div class="back card"><a href="staff.html">Staff</a></div>
+			   		</li>
+					<li class="panel">
+						<img class="front card" src="icons/boy11.svg">
+						<div class="back card"><a href="faq.html">FAQ</a></div>
+				   </li>
+					<li class="panel">
+						<img class="front card" src="icons/clock14.svg">
+						<div class="back card"><a href="hours.html">Hours</a></div>
+			   		</li>
+					<li class="panel">
+						<img class="front card" src="icons/first12.svg">
+						<div class="back card"><a href="about.html">About</a></div>
+			   		</li>
+				</ul>
+			</nav>
+		</header>
+	<div id="wrapper">
+		<section id="description">
+			<img src="icons/staylogoproto.gif">
+			  	<h4>Project STAY provides comprehensive health services for high-risk and HIV-positive adolescents and young adults between the ages of 13 and 24 in New York City.</h4>
+			  	<h2>About/Locations</h2>
+			  	<h3 style="text-decoration: underline">Project STAY at 610 W. 158th Street</h3>
+			  	<iframe width="280" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=610+W+158th+Street,+NY&amp;sll=37.0625,-95.677068&amp;sspn=63.255964,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=610+W+158th+St,+New+York,+10032&amp;ll=40.835746,-73.944447&amp;spn=0.005682,0.00912&amp;z=16&amp;output=embed"></iframe>
+				<p>610 W. 158th Street, 1st Floor<br>
+				   New York, NY 10027<br>
+				   Tel: 646-284-9739<br>
+				<span style="font-size:0.9em">Thursday 2pm-7pm<br>
+				Subway: 1 train to 157th Street or C train to 155th Street<br>
+				Buses: M 2,3,4,5,18,100,101; Bx6</span>
+				</p>
+				<hr>
+				<h3 style="text-decoration: underline">Project STAY at 622 W. 168th Street</h3>
+				<iframe width="280" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=622+West+168th+Street,+Manhattan,+NY&amp;aq=0&amp;oq=+622+W.+168th+Street&amp;sll=40.94438,-73.864294&amp;sspn=0.213945,0.310364&amp;ie=UTF8&amp;hq=&amp;hnear=622+W+168th+St,+New+York,+10032&amp;t=m&amp;ll=40.842856,-73.940177&amp;spn=0.005682,0.008047&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+				<p>Vanderbilt Clinic, 4th Floor (VC4) @ 622 W. 168th Street<br>
+					New York, NY 10032<br>
+					Tel: 212-305-5000<br>
+					<span style="font-size:0.9em">Mondays and Fridays 9am-5pm / Wednesdays 1pm-5pm<br>
+				      (Tuesday and Thursday appointment only)<br>
+				      </span></p>
+				<hr>
+				<h3 style="text-decoration: underline">Project STAY Office</h3>
+				<iframe width="280" height="280" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=215+W.+125th+Street,+NY&amp;sll=37.0625,-95.677068&amp;sspn=63.255964,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=215+W+125th+St,+New+York,+10027&amp;ll=40.812737,-73.948932&amp;spn=0.011368,0.018239&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+				<p>215 W. 125th Street<br>
+   				New York, NY 10032<br>
+				<span style="font-size:0.9em">P 646-284-9732 / F 646-284-9729<br>
+				Subway: A/B/C/D or 2/3 trains to the 125th Street</span></p>
+		  </section>
+    </div>
+		<script>
+		// Hamburger Menu
+		$('#hamburger').on("click", function(){
+			$('#hamburger-menu').toggleClass('active-header');
+			$('#wrapper').toggleClass('active-header');
+		});
+		</script>
+	</body>
+</html>
