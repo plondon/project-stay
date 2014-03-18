@@ -228,32 +228,9 @@ a:hover {
 	padding-bottom: 5%;
 }
 
-.staff {
-	position: absolute;
-	width: 100%;
-	padding-top: 50px;
-	background-color: #D3EBFA;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-.staff-pic {
-	display: inline-block;
-	margin-left: 0%;
-	overflow: hidden;
-	width: 450px;
-	height: 350px;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-.staff-description {
-	width: 80%;
-	margin-left: 10%;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-#wrapper .staff-pic img {
-	width: 160px;
-	-webkit-transition: 0.5s ease-in-out;
+#wrapper h2 {
+	font-family: 'bigchunk';
+	font-size: 2.2em;
 }
 
 .faq {
@@ -359,6 +336,45 @@ iframe {
 	position: absolute;
 }
 
+/**************/
+/* ABOUT PAGE */
+/**************/
+
+.staff {
+	position: relative;
+	width: 100%;
+	padding-top: 40px;
+	background-color: #D3EBFA;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.staff-pic {
+	display: inline-block;
+	margin-left: 0%;
+	overflow: hidden;
+	width: 450px;
+	height: 350px;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.staff-description {
+	width: 80%;
+	margin-left: 10%;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+#wrapper .staff-pic img {
+	width: 160px;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.services {
+	width: 100%;
+	position: absolute;
+	background-color: #63ff4d;
+	padding-top: 40px;
+}
+
 /*********************/
 /* CSS Media Queries */
 /*********************/
@@ -436,7 +452,7 @@ iframe {
 
 	}
 	.staff-description {
-		position: absolute;
+		position: relative;
 		width: 80%;
 		margin-left: -5%;
 		font-size: 0.8em;
