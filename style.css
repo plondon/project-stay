@@ -265,6 +265,40 @@ iframe {
 	border-left-width: 0px;
 }
 
+/* STI Page */
+#HIV {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #54c6ff;;
+}
+
+#syphillis {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #63ff4d;
+}
+
+.sti-name {
+	text-align: left;
+	margin-left: 4%;
+	padding: 2%;
+	font-family: 'bigchunk'
+}
+
+.sti-information {
+	position: relative;
+	width: 50%;
+}
+
+.sti-box {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+}
+
 /*********************/
 /* CSS Media Queries */
 /*********************/
