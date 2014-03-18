@@ -182,7 +182,7 @@ a:hover {
 	width: 19em;
 }
 
-#wrapper #description {
+#wrapper .description {
 	position: relative;
 	width: 50%;
 	left: 25%;
@@ -310,6 +310,23 @@ iframe {
 	width: 100%;
 	height: auto;
 	background-color: #63ff4d;
+	padding-bottom: 50px;
+}
+
+#chlamydia {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #ff7544;
+	padding-bottom: 50px;
+}
+
+#gonorrhea {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #54c6ff;
+	padding-bottom: 50px;
 }
 
 .sti-name {
@@ -330,7 +347,6 @@ iframe {
 	display: inline-block;
 	width: 300px;
 	height: 300px;
-	border: 1px solid black;
 	-webkit-transition: 0.5s ease-in-out;
 }
 
@@ -410,7 +426,7 @@ iframe {
 		top: 10px;
 		z-index: 2;
 	}
-	#wrapper #description {
+	#wrapper .description {
 		width: 100%; /* old value = 100 */
 		left: 0%;
 	}
