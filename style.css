@@ -54,9 +54,11 @@ header ul {
 	top: -15px;
 }
 
+
 nav a {
 	text-decoration: none;
 	font-family: 'bigchunk', sans-serif;
+	font-size: medium;
 	color: black;
 }
 
