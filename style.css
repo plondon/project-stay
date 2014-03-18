@@ -14,8 +14,9 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 }
-
-/*NAV BAR*/
+/***********/
+/* NAV BAR */
+/***********/
 
 header {
 	height: 123px;
@@ -53,15 +54,6 @@ header ul {
 	top: -15px;
 }
 
-#hamburger {
-	display: none;
-}
-
-#hamburger-menu {
-	display: none;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
 nav a {
 	text-decoration: none;
 	font-family: 'bigchunk', sans-serif;
@@ -74,6 +66,19 @@ header a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+/******************/
+/* HAMBURGER MENU */
+/******************/
+
+#hamburger {
+	display: none;
+}
+
+#hamburger-menu {
+	display: none;
+	-webkit-transition: 0.5s ease-in-out;
 }
 
 #hamburger-menu li {
@@ -93,7 +98,9 @@ a:hover {
 	-webkit-transform: translateY(123px);
 }
 
-/*IMAGE FLIP*/
+/**************/
+/* IMAGE FLIP */
+/**************/
 
 .panel {
 	width: 10%;
@@ -138,6 +145,26 @@ a:hover {
     transform: rotateY(180deg);  
 }
 
+.sti-box:hover .front {
+    z-index: 1;
+    -webkit-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+} 
+
+.sti-box:hover .back {
+    z-index: 2;   
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+/********/
+/* BODY */
+/********/
+
 #wrapper {
 	position: absolute;
 	width: 90%;
@@ -151,7 +178,7 @@ a:hover {
 	z-index: 0;
 }
 
-#wrapper img {
+#wrapper .description img {
 	width: 19em;
 }
 
@@ -266,7 +293,10 @@ iframe {
 	border-left-width: 0px;
 }
 
+/************/
 /* STI Page */
+/************/
+
 #HIV {
 	position: relative;
 	width: 100%;
@@ -299,29 +329,12 @@ iframe {
 	display: inline-block;
 	width: 300px;
 	height: 300px;
-	border: 1px solid black;
 	-webkit-transition: 0.5s ease-in-out;
-}
-
-.sti-box:hover .front {
-    z-index: 1;
-    -webkit-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-} 
-
-.sti-box:hover .back {
-    z-index: 2;   
-    -webkit-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    transform: rotateY(0deg);
 }
 
 .sti-box img {
 	position: relative;
-	width: 16em;
+	width: 15em;
 }
 
 .sti-box .back {
