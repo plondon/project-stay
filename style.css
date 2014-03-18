@@ -184,7 +184,7 @@ a:hover {
 	width: 19em;
 }
 
-#wrapper #description {
+#wrapper .description {
 	position: relative;
 	width: 50%;
 	left: 25%;
@@ -230,32 +230,9 @@ a:hover {
 	padding-bottom: 5%;
 }
 
-.staff {
-	position: absolute;
-	width: 100%;
-	padding-top: 50px;
-	background-color: #D3EBFA;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-.staff-pic {
-	display: inline-block;
-	margin-left: 0%;
-	overflow: hidden;
-	width: 450px;
-	height: 350px;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-.staff-description {
-	width: 80%;
-	margin-left: 10%;
-	-webkit-transition: 0.5s ease-in-out;
-}
-
-#wrapper .staff-pic img {
-	width: 160px;
-	-webkit-transition: 0.5s ease-in-out;
+#wrapper h2 {
+	font-family: 'bigchunk';
+	font-size: 2.2em;
 }
 
 .faq {
@@ -312,6 +289,23 @@ iframe {
 	width: 100%;
 	height: auto;
 	background-color: #63ff4d;
+	padding-bottom: 50px;
+}
+
+#chlamydia {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #ff7544;
+	padding-bottom: 50px;
+}
+
+#gonorrhea {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #54c6ff;
+	padding-bottom: 50px;
 }
 
 .sti-name {
@@ -332,7 +326,6 @@ iframe {
 	display: inline-block;
 	width: 300px;
 	height: 300px;
-	border: 1px solid black;
 	-webkit-transition: 0.5s ease-in-out;
 }
 
@@ -343,6 +336,45 @@ iframe {
 
 .sti-box .back {
 	position: absolute;
+}
+
+/**************/
+/* ABOUT PAGE */
+/**************/
+
+.staff {
+	position: relative;
+	width: 100%;
+	padding-top: 40px;
+	background-color: #D3EBFA;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.staff-pic {
+	display: inline-block;
+	margin-left: 0%;
+	overflow: hidden;
+	width: 450px;
+	height: 350px;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.staff-description {
+	width: 80%;
+	margin-left: 10%;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+#wrapper .staff-pic img {
+	width: 160px;
+	-webkit-transition: 0.5s ease-in-out;
+}
+
+.services {
+	width: 100%;
+	position: absolute;
+	background-color: #63ff4d;
+	padding-top: 40px;
 }
 
 /*********************/
@@ -412,7 +444,7 @@ iframe {
 		top: 10px;
 		z-index: 2;
 	}
-	#wrapper #description {
+	#wrapper .description {
 		width: 100%; /* old value = 100 */
 		left: 0%;
 	}
@@ -422,7 +454,7 @@ iframe {
 
 	}
 	.staff-description {
-		position: absolute;
+		position: relative;
 		width: 80%;
 		margin-left: -5%;
 		font-size: 0.8em;
