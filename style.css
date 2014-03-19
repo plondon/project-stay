@@ -380,10 +380,21 @@ iframe {
 /*********************/
 /* CSS Media Queries */
 /*********************/
+@media (max-width: 1100px) {
+	#contraception {
+		left: -11px;
+	}
+}
 
 @media (max-width: 1000px) {
 	header #icons li {
 		margin-left: 7.5%;
+	}
+}
+
+@media (max-width: 990px) {
+	#contraception {
+		left: -20px;
 	}
 }
 
