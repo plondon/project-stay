@@ -141,6 +141,7 @@ a:hover {
 
 .panel img {
 	width: 70px;
+	position: relative;
 }
 
 .card {
@@ -339,8 +340,9 @@ iframe {
 /*****************/
    .pregnancy {
    	position: relative;
-	background-color:#ff93cf; 
+	background-color:#5AFF9C; /*#ff93cf; */ 
     padding-top: 1px;	
+    height: 100%;
     }
 
     .pregnancy p{
@@ -355,10 +357,6 @@ iframe {
 	-webkit-transition: 0.5s ease-in-out;
 	}
 
-	.pregnancy-box .back{
-	position: relative;
-
-	}
    
     .pregnancy-box img{
     position: relative;
