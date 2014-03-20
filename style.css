@@ -139,6 +139,10 @@ a:hover {
     z-index: 2;
 }
 
+.pregnancy-box .front{
+	z-index: 2;
+}
+
 .sti-box .back {
     z-index: 1;
     top: 15px;
@@ -146,6 +150,14 @@ a:hover {
     -ms-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);  
     transform: rotateY(180deg);  
+}
+.pregnancy-box .back{
+	z-index: 1;
+	top: 15px;
+	-webkit-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-moz-transform: rotatY(180deg);
+	transform: rotateY(180deg);
 }
 
 .sti-box:hover .front {
@@ -156,6 +168,14 @@ a:hover {
     transform: rotateY(-180deg);
 } 
 
+.pregnancy-box:hover .front {
+	z-index: 1;
+	-webkit-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
 .sti-box:hover .back {
     z-index: 2;   
     -webkit-transform: rotateY(0deg);
@@ -163,6 +183,16 @@ a:hover {
     -moz-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
+
+.pregnancy-box:hover .back{
+	z-index: 2;
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+
 
 /********/
 /* BODY */
@@ -277,14 +307,31 @@ iframe {
 /* Contraception */
 /*****************/
    .pregnancy {
+   	position: relative;
 	background-color:#ff93cf; 
     padding-top: 1px;	
-}
+    }
 
-	.pregnancy p{
-		padding: 2% 15%;
+    .pregnancy p{
+	padding: 2% 15%;
 	}
 
+	.pregnancy-box{
+    position: relative;
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	-webkit-transition: 0.5s ease-in-out;
+	}
+
+	.pregnancy-box .back{
+	position: relative;
+
+	}
+   
+    .pregnancy-box img{
+    position: relative;
+    }
 /************/
 /* STI Page */
 /************/
