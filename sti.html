@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<script src="jquery.js" ></script>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 	</head>
@@ -48,18 +49,18 @@
 				</ul>
 			</nav>
 		</header>
-	<div id="wrapper" style="background-color: #ff7544;">
-		<div id="sti-navigation">
+		<div class="second-nav">
 			<ul>
-			    <a href="#hiv"><li>HIV</li></a>
-			    <a href="#syphillis"><li>Syphillis</li></a>
-			    <a href="#chlamydia"><li>Chlamydia</li></a>
-			    <a href="#gonorrhea"><li>Gonorrhea</li></a>
-			    <a href="#trichomoniasis"><li>Trichomoniasis</li></a>
-			    <a href="#hpv"><li>HPV</li></a>
+			    <a href="#hiv"><li>HIV</li></a>|
+			    <a href="#syphillis"><li>Syphillis</li></a>|
+			    <a href="#chlamydia"><li>Chlamydia</li></a>|
+			    <a href="#gonorrhea"><li>Gonorrhea</li></a>|
+			    <a href="#trichomoniasis"><li>Trichomoniasis</li></a>|
+			    <a href="#hpv"><li>HPV</li></a>|
 			    <a href="#herpes"><li>Herpes</li></a>
 			</ul>
 		</div>
+	<div id="wrapper" style="background-color: #ff7544;">
 		<section class="description">
 			<img src="icons/staylogoproto.gif">
 		  	<h1>STI Information</h1>
@@ -275,8 +276,8 @@
 			$('#hamburger-menu').toggleClass('active-header');
 			$('#wrapper').toggleClass('active-header');
 		});
-		$('#sti-navigation ul a').on("click", function(e) {
-			var sti_position = $($(this).attr('href')).offset().top-122
+		$('.second-nav ul a').on("click", function(e) {
+			var sti_position = $($(this).attr('href')).offset().top-180
 			console.log(sti_position)
 			e.preventDefault();
 			$("html, body").animate({ 
