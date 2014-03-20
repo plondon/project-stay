@@ -19,6 +19,10 @@
 	background-color: #ff7544
 }
 
+.green {
+	background-color: #63ff4d;
+}
+
 /****************************************/
 /* CSS (Internet Explorer 9 and below)  */
 /****************************************/
@@ -316,36 +320,34 @@ iframe {
 /* STI Page */
 /************/
 
-#HIV {
+.sti {
 	position: relative;
 	width: 100%;
 	height: auto;
-	background-color: #54c6ff;
 	padding-bottom: 50px;
 }
 
-#syphillis {
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #63ff4d;
-	padding-bottom: 50px;
+#sti-navigation {
+	position: absolute;
+	float: left;
 }
 
-#chlamydia {
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #ff7544;
-	padding-bottom: 50px;
+#sti-navigation li {
+	text-align: left;
+	font-family: 'bigchunk';
+	color: black;
+	line-height: 2em;
+	font-size: 1.3em;
+	text-decoration: none;
 }
 
-#gonorrhea {
-	position: relative;
-	width: 100%;
-	height: auto;
-	background-color: #54c6ff;
-	padding-bottom: 50px;
+#sti-navigation a {
+	text-decoration: none;
+	color: black;
+}
+
+#sti-navigation a:hover {
+	text-decoration: underline;
 }
 
 .sti-name {
@@ -518,5 +520,8 @@ iframe {
 	.resources ol li {
 		font-size: 1em;
 		line-height: 1.2em;
+	}
+	#sti-navigation {
+		display: none;
 	}
 }
