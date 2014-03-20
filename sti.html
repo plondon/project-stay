@@ -49,17 +49,17 @@
 				</ul>
 			</nav>
 		</header>
-		<nav class="second-nav">
+		<div class="second-nav">
 			<ul>
-			    <a href="#hiv"><li>HIV</li></a>
-			    <a href="#syphillis"><li>Syphillis</li></a>
-			    <a href="#chlamydia"><li>Chlamydia</li></a>
-			    <a href="#gonorrhea"><li>Gonorrhea</li></a>
-			    <a href="#trichomoniasis"><li>Trichomoniasis</li></a>
-			    <a href="#hpv"><li>HPV</li></a>
+			    <a href="#hiv"><li>HIV</li></a>|
+			    <a href="#syphillis"><li>Syphillis</li></a>|
+			    <a href="#chlamydia"><li>Chlamydia</li></a>|
+			    <a href="#gonorrhea"><li>Gonorrhea</li></a>|
+			    <a href="#trichomoniasis"><li>Trichomoniasis</li></a>|
+			    <a href="#hpv"><li>HPV</li></a>|
 			    <a href="#herpes"><li>Herpes</li></a>
 			</ul>
-		</nav>
+		</div>
 	<div id="wrapper" style="background-color: #ff7544;">
 		<section class="description">
 			<img src="icons/staylogoproto.gif">
@@ -277,7 +277,7 @@
 			$('#wrapper').toggleClass('active-header');
 		});
 		$('.second-nav ul a').on("click", function(e) {
-			var sti_position = $($(this).attr('href')).offset().top-122
+			var sti_position = $($(this).attr('href')).offset().top-180
 			console.log(sti_position)
 			e.preventDefault();
 			$("html, body").animate({ 
