@@ -68,6 +68,7 @@ header ul {
 .panel a {
 	position: relative;
 	top: -15px;
+	font-family:''
 }
 
 
@@ -230,6 +231,7 @@ a:hover {
 	background-color: #ff7544;
 }
 
+
 #get-tested h4 {
 	position: relative;
 	width: 80%;
@@ -298,6 +300,17 @@ iframe {
 	border-bottom-width: 0px;
 	border-left-width: 0px;
 }
+/*****************/
+/* Contraception */
+/*****************/
+   .pregnancy {
+	background-color:#ff93cf; 
+    padding-top: 1px;	
+}
+
+	.pregnancy p{
+		padding: 2% 15%;
+	}
 
 /************/
 /* STI Page */
