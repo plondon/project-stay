@@ -3,6 +3,22 @@
 	src: url('fonts/Chunkfive.otf');
 }
 
+/**********/
+/* Colors */
+/**********/
+
+.blue {
+	background-color: #54c6ff;
+}
+
+.yellow {
+	background-color: #fffd00;
+}
+
+.orange {
+	background-color: #ff7544
+}
+
 /****************************************/
 /* CSS (Internet Explorer 9 and below)  */
 /****************************************/
@@ -68,6 +84,11 @@ header a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+#bar #icons {
+	position: relative;
+	left: -7px;
 }
 
 /******************/
@@ -235,32 +256,38 @@ a:hover {
 	font-size: 2.2em;
 }
 
-.faq {
+.resources {
+	position: relative;
 	background-color: #63ff4d;
-	height: 100%;
-	padding-right: 15%;
-	padding-left: 5%;
-	margin-bottom: 20%;
 	margin-top: 5%;
 }
 
-.faq ol li {
-	background-color: #63ff4d;
-	text-align: left;
+.resources ol {
+	position: relative;
+	width: 100%;
+	left: -40px;
+}
+
+.resources ol li {
+	top: 5px;
+	padding: 3% 0;
+	text-align: center;
 	font-weight: bold;
 	font-size: 1.2em;
 	line-height: 2em;
+	list-style: none;
 }
 
-.faq li:hover {
+.resources li:hover {
 	cursor: pointer;
 }
 
-.faq p {
+.resources p {
 	display: none;
 	font-weight: normal;
 	font-size: 0.8em;
 	line-height: 1.2em;
+	padding: 2% 15%;
 }
 
 iframe {
@@ -475,7 +502,7 @@ iframe {
 		padding-bottom: 2em;
 		-webkit-transition: 0.5s ease-in-out;
 	}
-	.faq ol li {
+	.resources ol li {
 		font-size: 1em;
 		line-height: 1.2em;
 	}
