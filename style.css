@@ -45,7 +45,7 @@ header {
 	width: 90%;
 	background-color: #fffd00;
 	-webkit-transition: 0.5s ease-in-out;
-	z-index: 2;
+	z-index: 100;
 	-webkit-box-shadow: 0px 3px 12px -5px #333;
     -moz-box-shadow: 0px 3px 12px -5px #333;
     box-shadow: 0px 3px 12px -5px #333;
@@ -102,9 +102,20 @@ a:hover {
 
 .second-nav {
 	background-color: #ff93cf;
-	position: absolute;
-	z-index: 1;
+	position: fixed;
+	z-index: 4;
 	margin-top: 123px;
+	height: 58px;
+	width: 90%;
+	left: 5%;
+	-webkit-transition: 0.5s ease-in-out;
+	-webkit-box-shadow: 0px 3px 12px -5px #333;
+    -moz-box-shadow: 0px 3px 12px -5px #333;
+    box-shadow: 0px 3px 12px -5px #333;
+}
+
+.second-nav ul {
+	margin-left: -2%;
 }
 
 .second-nav li {
@@ -114,10 +125,13 @@ a:hover {
 .second-nav a {
 	text-decoration: none;
 	color: black;
+	padding: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8em;
 }
 
 .second-nav a:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid black;
 }
 
 /******************/
@@ -253,7 +267,7 @@ a:hover {
 	width: 90%;
 	height: auto;
 	left: 5%;
-	top: 123px; 
+	top: 181px; 
 	padding-top: 2%;
 	text-align: center;
 	background-color: #54c6ff;
@@ -499,6 +513,18 @@ iframe {
 	}	
 }
 
+@media (max-width: 750px) {
+	.second-nav {
+		display: none;
+	}
+	.active-header {
+		-webkit-transform: translateY(-58px);
+	}
+	#wrapper {
+		top: 123px;
+	}
+}
+
 @media (max-width: 730px) {
 	#wrapper section h1 {
 		font-size: 2em;
@@ -507,6 +533,9 @@ iframe {
 
 @media (min-width: 701px) {
 	.active-header {
+		-webkit-transform: translateY(58px);
+	}
+	#wrapper {
 		-webkit-transform: translateY(0px);
 	}
 }
@@ -519,11 +548,15 @@ iframe {
 		display: none;
 	}
 	#wrapper {
+		position: relative;
 		top: 0px;
 		-webkit-transition: 0.5s ease-in-out;
 		}
 	#wrapper img {
 		width: 15em; 
+	}
+	.active-header {
+		-webkit-transform: translateY(123px);
 	}
 	#hamburger-menu {
 		position: absolute;
@@ -534,14 +567,14 @@ iframe {
 		background-color: #fffd00;
 		color: black;
 		display: block;
-		z-index: 0;
+		z-index: 2;
 	}
 	#hamburger {
 		display: block;
 		position: absolute;
 		right: 50px;
 		top: 10px;
-		z-index: 2;
+		z-index: 5;
 	}
 	#wrapper .description {
 		width: 100%; /* old value = 100 */
