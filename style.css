@@ -96,6 +96,30 @@ a:hover {
 	left: -7px;
 }
 
+/**************/
+/* SECOND NAV */
+/**************/
+
+.second-nav {
+	background-color: #ff93cf;
+	position: absolute;
+	z-index: 1;
+	margin-top: 123px;
+}
+
+.second-nav li {
+	display: inline-block;
+}
+
+.second-nav a {
+	text-decoration: none;
+	color: black;
+}
+
+.second-nav a:hover {
+	text-decoration: underline;
+}
+
 /******************/
 /* HAMBURGER MENU */
 /******************/
@@ -325,29 +349,6 @@ iframe {
 	width: 100%;
 	height: auto;
 	padding-bottom: 50px;
-}
-
-#sti-navigation {
-	position: absolute;
-	float: left;
-}
-
-#sti-navigation li {
-	text-align: left;
-	font-family: 'bigchunk';
-	color: black;
-	line-height: 2em;
-	font-size: 1.3em;
-	text-decoration: none;
-}
-
-#sti-navigation a {
-	text-decoration: none;
-	color: black;
-}
-
-#sti-navigation a:hover {
-	text-decoration: underline;
 }
 
 .sti-name {
