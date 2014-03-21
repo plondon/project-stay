@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>STAY Project</title>
+		<title>Project STAY - Healthy • Informed • Safe </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<script src="jquery.js" ></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<script src="js/jquery.js" ></script>
+		<script src="js/javascript.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 	</head>
 
@@ -18,7 +19,7 @@
 				<ul>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="contraception.html">CONTRACEPTION</a></li>
-					<li><a href="faq.html">RESOURCES</a></li>
+					<li><a href="resources.html">RESOURCES</a></li>
 					<li><a href="sti.html">STI</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 				</ul>
@@ -36,7 +37,7 @@
 			   		</li>
 					<li class="panel">
 						<img src="icons/boy11.svg">
-						<div><a href="faq.html">Resources</a></div>
+						<div><a href="resources.html">Resources</a></div>
 				   </li>
 					<li class="panel">
 						<img src="icons/first12.svg">
@@ -270,20 +271,5 @@
 	  	</div>
 	  </section>
 	</div>
-		<script>
-		// Hamburger Menu
-		$('#hamburger').on("click", function(){
-			$('#hamburger-menu').toggleClass('active-header');
-			$('#wrapper').toggleClass('active-header');
-		});
-		$('.second-nav ul a').on("click", function(e) {
-			var sti_position = $($(this).attr('href')).offset().top-180
-			console.log(sti_position)
-			e.preventDefault();
-			$("html, body").animate({ 
-		        scrollTop: sti_position
-				    }, 'slow');
-		});
-		</script>
 	</body>
 </html>

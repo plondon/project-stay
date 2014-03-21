@@ -72,7 +72,7 @@ header ul {
 .panel a {
 	position: relative;
 	top: -15px;
-	font-family:''
+	font-family:'bigchunk';
 }
 
 
@@ -285,14 +285,14 @@ a:hover {
 	left: 25%;
 }
 
-#wrapper #get-tested {
+#wrapper #our-stories {
 	position: relative;
 	width: 100%;
 	background-color: #63ff4d;
 	height:100%;
 }
 
-#wrapper #get-tested h1 {
+#wrapper #our-stories h1 {
 	padding-top: 40px;
 }
 
@@ -305,7 +305,7 @@ a:hover {
 }
 
 
-#get-tested h4 {
+#our-stories h4 {
 	position: relative;
 	width: 80%;
 	left: 10%;

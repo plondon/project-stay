@@ -4,9 +4,11 @@
 		<title>Project STAY - Healthy • Informed • Safe </title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<script src="js/jquery.js" ></script>
+		<script src="js/javascript.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700|Open+Sans:700,400' rel='stylesheet' type='text/css'>
-		<script src="jquery.js" ></script>
 	</head>
 
 	<body>
@@ -17,7 +19,7 @@
 				<ul>
 					<li><a href="index.html">HOME</a></li>
 					<li><a href="contraception.html">CONTRACEPTION</a></li>
-					<li><a href="faq.html">RESOURCES</a></li> <!-- update link! -->
+					<li><a href="resources.html">RESOURCES</a></li>
 					<li><a href="sti.html">STI</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 				</ul>
@@ -35,7 +37,7 @@
 			   		</li>
 					<li class="panel">
 						<img src="icons/boy11.svg">
-						<div><a href="faq.html">Resources</a></div>
+						<div><a href="resources.html">Resources</a></div>
 				   </li>
 					<li class="panel">
 						<img src="icons/first12.svg">
@@ -48,12 +50,18 @@
 				</ul>
 			</nav>
 		</header>
+		<div class="second-nav">
+			<ul>
+			    <a href="#our-stories"><li>Our Stories</li></a>|
+			    <a href="#locations"><li>Locations</li></a>
+			</ul>
+		</div>
 	<div id="wrapper">
 		<section class="description">
 			<img src="icons/stayLogoBlack.svg">
 		  	<h4>Project STAY provides comprehensive health services for high-risk and HIV-positive adolescents and young adults between the ages of 13 and 24 in New York City.</h4>
 		</section>
-	  	<section id="get-tested">
+	  	<section id="our-stories">
 	  	  	<h1>Our Stories</h1>
 
 	  		<!--<h4>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</h4> -->
@@ -108,12 +116,5 @@
 				Subway: A/B/C/D or 2/3 trains to the 125th Street</span></p>
 	  	</section>	
     </div>
-		<script>
-		// Hamburger Menu
-		$('#hamburger').on("click", function(){
-			$('#hamburger-menu').toggleClass('active-header');
-			$('#wrapper').toggleClass('active-header');
-		});
-		</script>
 	</body>
 </html>
