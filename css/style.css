@@ -568,10 +568,12 @@ iframe {
 		width: 100%; /* old value = 100 */
 
 	}
+	.up-arrow {
+		display: none;
+	}
 	.staff-description {
 		position: relative;
 		width: 80%;
-		margin-left: -5%;
 		font-size: 0.8em;
 	}
 	.staff-pic {
