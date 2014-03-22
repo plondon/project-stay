@@ -15,7 +15,7 @@ $(document).ready(function(){
 		$('.second-nav').removeClass('active-second-header')
 	});
 
-	//second nav-bar page navigation
+	// second nav-bar page navigation
 	$('.second-nav ul a').on("click", function(e) {
 		var sti_position = $($(this).attr('href')).offset().top-180
 		console.log(sti_position)
@@ -24,9 +24,15 @@ $(document).ready(function(){
 	        scrollTop: sti_position
 			    }, 'slow');
 	});	
+	// up arrow clicker
 	$('.up-arrow').on("click", function(){
 		$("html, body").animate({
 			scrollTop: $('#wrapper').offset().top-181
 		}, 'slow');
 	});
+	// expandable list
+	var $item1 = $('.resources').children('ol').children('li')
+ 		$item1.click(function(){
+ 			$(this).children().slideToggle();
+ 		});
 })

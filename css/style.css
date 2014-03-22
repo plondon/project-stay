@@ -493,7 +493,7 @@ iframe {
 /* CSS Media Queries */
 /*********************/
 @media (max-width: 1100px) {
-	#contraception {
+	#icons:nth-child(2) a {
 		left: -11px;
 	}
 }
@@ -505,7 +505,7 @@ iframe {
 }
 
 @media (max-width: 990px) {
-	#contraception {
+	#icons:nth-child(2) a {
 		left: -20px;
 	}
 }
