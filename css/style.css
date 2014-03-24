@@ -528,7 +528,7 @@ iframe {
 
 @media (max-width: 700px) {
 	header {
-		transform: translateY(-123px);
+		transform: translateY(-144px);
 	}
 	header #icons li {
 		display: none;
