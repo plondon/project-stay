@@ -252,7 +252,9 @@ a:hover {
 }
 
 #wrapper .description img {
+	position: relative;
 	width: 19em;
+	left: 2%;
 }
 
 #wrapper .description {
