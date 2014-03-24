@@ -39,7 +39,7 @@ body {
 /***********/
 
 header {
-	height: 123px;
+	height: 143px;
 	position: fixed;
 	left: 5%;
 	width: 90%;
@@ -117,6 +117,7 @@ a:hover {
 
 .second-nav li {
 	display: inline-block;
+	padding-top: 15px;
 }
 
 .second-nav a {
@@ -243,7 +244,7 @@ a:hover {
 	height: auto;
 	left: 5%;
 	top: 123px; 
-	padding-top: 2%;
+	padding-top: 6%;
 	text-align: center;
 	background-color: #54c6ff;
 	transition: 0.5s ease-in-out;
