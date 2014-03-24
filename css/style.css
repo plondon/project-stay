@@ -75,7 +75,7 @@ header ul {
 }
 
 
-nav a {
+header nav a {
 	text-decoration: none;
 	font-family: 'bigchunk', sans-serif;
 	font-size: medium;
@@ -127,8 +127,8 @@ a:hover {
 	font-size: 0.8em;
 }
 
-.second-nav a:hover {
-	border-bottom: 1px solid black;
+.second-nav li:hover {
+	text-decoration: underline;
 }
 
 .active-second-header {
