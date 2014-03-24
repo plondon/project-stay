@@ -150,9 +150,18 @@ a:hover {
 	transition: 0.5s ease-in-out;
 }
 
-#hamburger-menu li {
+#hamburger-menu li a {
 	list-style: none;
 	text-align: left;
+	font-family: 'bigchunk';
+	color:black;
+
+
+}
+
+#hamburger-menu li:visited {
+	color:#FF93CF;
+
 }
 
 #hamburger:hover {
