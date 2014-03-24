@@ -4,7 +4,7 @@
 }
 
 /**********/
-/* Colors */
+/* COLORS */
 /**********/
 
 .blue {
@@ -360,7 +360,7 @@ iframe {
 }
 
 /*****************/
-/* Contraception */
+/* CONTRACEPTION */
 /*****************/
    .pregnancy {
    	position: relative;
@@ -463,6 +463,20 @@ iframe {
 	position: absolute;
 	background-color: #63ff4d;
 	padding-top: 40px;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+	background-color: #ff93cf;
+	color: white;
+	font-size: 0.6em;
+}
+
+footer a {
+	color: white;
 }
 
 /*********************/
