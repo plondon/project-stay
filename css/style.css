@@ -328,6 +328,7 @@ a:hover {
 	position: relative;
 	width: 100%;
 	left: -40px;
+	bottom: -16px;
 }
 
 .resources ol li {
@@ -561,7 +562,7 @@ footer a {
 		top: 0px;
 		transition: 0.5s ease-in-out;
 		}
-	#wrapper img {
+	#wrapper .description img {
 		width: 15em; 
 	}
 	.active-header {
