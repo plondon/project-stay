@@ -11,9 +11,9 @@ $(document).ready(function(){
 		$('.second-nav').removeClass('active-second-header')
 		$('#' + second_nav_id + '.second-nav').addClass('active-second-header')
 	});
-	$('.second-nav').on("mouseleave", function(){
-		$('.second-nav').removeClass('active-second-header')
-	});
+	// $('.second-nav').on("mouseleave", function(){
+	// 	$('.second-nav').removeClass('active-second-header')
+	// });
 
 	// second nav-bar page navigation
 	$('.second-nav ul a').on("click", function(e) {

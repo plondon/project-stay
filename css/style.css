@@ -4,7 +4,7 @@
 }
 
 /**********/
-/* Colors */
+/* COLORS */
 /**********/
 
 .blue {
@@ -75,7 +75,7 @@ header ul {
 }
 
 
-nav a {
+header nav a {
 	text-decoration: none;
 	font-family: 'bigchunk', sans-serif;
 	font-size: medium;
@@ -128,8 +128,8 @@ a:hover {
 	font-size: 0.8em;
 }
 
-.second-nav a:hover {
-	border-bottom: 1px solid black;
+.second-nav li:hover {
+	text-decoration: underline;
 }
 
 .active-second-header {
@@ -252,7 +252,9 @@ a:hover {
 }
 
 #wrapper .description img {
+	position: relative;
 	width: 19em;
+	left: 2%;
 }
 
 #wrapper .description {
@@ -358,7 +360,7 @@ iframe {
 }
 
 /*****************/
-/* Contraception */
+/* CONTRACEPTION */
 /*****************/
    .pregnancy {
    	position: relative;
@@ -463,6 +465,20 @@ iframe {
 	padding-top: 40px;
 }
 
+/**********/
+/* FOOTER */
+/**********/
+
+footer {
+	background-color: #ff93cf;
+	color: white;
+	font-size: 0.6em;
+}
+
+footer a {
+	color: white;
+}
+
 /*********************/
 /* CSS Media Queries */
 /*********************/
@@ -526,7 +542,7 @@ iframe {
 
 @media (max-width: 700px) {
 	header {
-		transform: translateY(-123px);
+		transform: translateY(-144px);
 	}
 	header #icons li {
 		display: none;
