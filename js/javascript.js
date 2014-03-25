@@ -1,5 +1,28 @@
+// second nav-bar page navigation part 1
+var jump = function(e) {
+	if(e) {
+		e.preventDefault();
+		var target = $(this).attr("href");
+	}
+	else {
+		var target = location.hash;
+	}
+	var jump_animation = function(position) {
+		$('html, body').animate({
+			scrollTop: $(target).offset().top - position
+		}, 1500);
+	}
+	if ($('.second-nav').hasClass('active-second-header') === true) {
+		jump_animation(181)
+	}
+	else {
+		jump_animation(138)
+	}
+}
+$('html, body').hide()
+
 $(document).ready(function(){
-	//hamburger
+	// hamburger menu
 	$('#hamburger').on("click", function(){
 		$('#hamburger-menu').toggleClass('active-header');
 		$('#wrapper').toggleClass('active-header');
@@ -11,19 +34,20 @@ $(document).ready(function(){
 		$('.second-nav').removeClass('active-second-header')
 		$('#' + second_nav_id + '.second-nav').addClass('active-second-header')
 	});
-	// $('.second-nav').on("mouseleave", function(){
-	// 	$('.second-nav').removeClass('active-second-header')
-	// });
 
-	// second nav-bar page navigation
-	$('.second-nav ul a').on("click", function(e) {
-		var sti_position = $($(this).attr('href')).offset().top-180
-		console.log(sti_position)
-		e.preventDefault();
-		$("html, body").animate({ 
-	        scrollTop: sti_position
-			    }, 'slow');
-	});	
+	// second nav-bar page navigation part 2
+	$('.second-nav ul a[href^=#]').on("click", jump)
+
+	if (location.hash) {
+		setTimeout(function(){
+			$('html, body').scrollTop(0).show();
+			jump();
+		}, 0);
+	}
+	else {
+		$('html, body').show();
+	}
+
 	// up arrow clicker
 	$('.up-arrow').on("click", function(){
 		$("html, body").animate({
